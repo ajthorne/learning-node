@@ -24,8 +24,12 @@ Node.js is an open source, cross platform JavaScript runtime environment designe
 - You can add numbers together with parseFloat (deals with decimals)
 `console.log(parseFloat(process.argv[2]) + parseFloat(process.argv[3]))`
 
-###require and exports
+###require
 * require grabs variables from other js files to use
+* it can also grab built in packages like fs
+
+###exports
+???
 
 ###fs
 * built in, internal package manager
