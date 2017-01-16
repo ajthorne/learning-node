@@ -24,6 +24,7 @@ request(queryUrl, function (error, response, body) {
 
 	// Then log the Release Year for the movie
 	// console.log(body);
+	//use to figure out how to find parameter for 'Year'
 	console.log("The movie's Release Year is: " + JSON.parse(body)["Year"])
 }
 });

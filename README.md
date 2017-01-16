@@ -16,6 +16,7 @@ Node.js is an open source, cross platform JavaScript runtime environment designe
 - Prints path back to node and to JavaScript file
 - Creates an array for any other "arguments" entered
 ``node arguments.js 'stuff' 34``
+- allows you to get the text value/input from terminal
 
 - You can concatenation strings in terminal by adding together your process.argv
 `console.log(process.argv[2] + process.argv[3])`

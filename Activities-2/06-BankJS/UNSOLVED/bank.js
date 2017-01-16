@@ -27,10 +27,28 @@ function withdrawAmt() {
   console.log('You withdrew ' + '$' + value + '.');
 }
 
+function lotto() {
+  let rando = Math.floor((Math.random() * 10) + 1);
+  //gets random number between 1 and 10
+  console.log('Your number: ', rando);
+
+  if (rando === 2) {
+    fs.appendFile('bank.txt', ', ' + rando)
+    console.log("You won the lottery! Here's $2.");
+  }
+  
+  else {
+    fs.appendFile('bank.txt', ', -' + 0.33);
+    console.log('You lost $0.33');
+  }
+}
+
 if (action === 'total') {
   totalAmount();
 } else if (action === 'deposit') {
   depositAmt();
 } else if (action === 'withdraw') {
   withdrawAmt();
+} else if (action === 'lotto') {
+  lotto();
 }
