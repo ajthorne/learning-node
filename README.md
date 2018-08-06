@@ -1,18 +1,18 @@
-#Node.js
-###Docs: https://nodejs.org/dist/latest-v7.x/docs/api/
+# Node.js
+### Docs: https://nodejs.org/dist/latest-v7.x/docs/api/
 
-###What is it?
+### What is it?
 Node.js is an open source, cross platform JavaScript runtime environment designed to be run outside of browsers (on a server). It can be used for a variety of purposes including asset compilation, scripting, monitoring, and as the basis for web servers.
 
-###Benefits -
+### Benefits -
 * It reuses JavaScript (Front-enders can build a server themselves)
 * Extendable with plugins
 * Fast implementation
 * Asynchronous - Handles multiple requests at once
 
-####Run node from terminal using command ``node``
+#### Run node from terminal using command ``node``
 
-###process.argv
+### process.argv
 - Prints path back to node and to JavaScript file
 - Creates an array for any other "arguments" entered
 ``node arguments.js 'stuff' 34``
@@ -24,24 +24,24 @@ Node.js is an open source, cross platform JavaScript runtime environment designe
 - You can add numbers together with parseFloat (deals with decimals)
 `console.log(parseFloat(process.argv[2]) + parseFloat(process.argv[3]))`
 
-###require
+### require
 * require grabs variables from other js files to use
 * it can also grab built in packages like fs
 
-###exports
+### exports
 ???
 
-###fs
+### fs
 * built in, internal package manager
 * write files like so: `fs.writeFile("movies.txt", 'Inception, Die Hard')`
 * read files with `fs.readFile`
 * `fs.appendFile` - better to use because it doesn't overwrite previous file, rather it amends it
 
-###npm
+### npm
 * need to install external npm
 * need this to make requests from websites and servers to get response
 
-###request
+### request
 * The request function takes in a URL and returns three arguments (error, response, body)
   - 1. It provides an error if one exists.
   - 2. It provides a response (usually that the request was successful)  
